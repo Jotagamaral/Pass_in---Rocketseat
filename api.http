@@ -1,0 +1,36 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "Novo evento 2",
+    "details": null,
+    "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/24ebc4b3-4164-4f8d-ba04-c124c8c22a03/attendees
+Content-Type: application/json
+
+{
+    "name": "João Gabriel",
+    "email": "joao3@teste.com"
+}
+
+###
+
+GET http://localhost:3333/events/24ebc4b3-4164-4f8d-ba04-c124c8c22a03
+
+
+###
+
+GET http://localhost:3333/attendees/4/badge
+
+
+###
+
+GET http://localhost:3333/attendees/4/check-in
+
+###
+
+GET http://localhost:3333/events/24ebc4b3-4164-4f8d-ba04-c124c8c22a03/attendees?query=joão
