@@ -1,2 +1,2 @@
-# Pass_in---Rocketseat
+# Pass.in Rocketseat
 Api for a script of events 
